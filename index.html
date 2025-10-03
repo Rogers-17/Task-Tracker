@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Task Tracker</h1>
+
+    <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter your task here">
+        <button id="addTask">Add Task</button>
+    </div>
+
+    <div id="taskList" class="task-list">
+        <!-- Tasks will be displayed here -->
+         <div class="task-item">
+            <div>
+                <input type="checkbox" class="task-checkbox">
+                <span>Do my assignment</span>
+            </div>
+            <div>
+                <button class="primary">Edit</button>
+                <button class="danger">Delete</button>
+            </div>
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

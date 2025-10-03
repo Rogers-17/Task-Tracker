@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    background-color: #fff;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: dodgerblue;
+    font-weight: bolder;
+}
+
+.task-input{
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.task-input input{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd; 
+    border-radius: 5px;  
+    outline: none;
+}
+
+#addTask {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    color: white;
+}
+
+.task-input input:focus{
+    border-color: dodgerblue;
+}
+
+#taskList{
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.task-item span{
+    font-size: 16px;
+}
+.primary{
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.danger{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-item.completed span{
+    text-decoration: line-through;
+    color: gray;
+}   
+
